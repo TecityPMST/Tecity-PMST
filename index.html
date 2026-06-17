@@ -281,7 +281,7 @@ function Feed({day}){
 
 function App(){
   const days = window.ALL_DAYS || {};
-  const keys = Object.keys(days).sort().reverse();
+  const keys = Object.keys(days).sort().reverse().slice(0,7);
   const [date,setDate]=useState(keys[0]);
   const [tab,setTab]=useState("overview");
   const [theme,setTheme]=useState("light");
